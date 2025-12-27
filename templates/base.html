@@ -15,10 +15,6 @@
     </script>
 </head>
 <body>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <span class="theme-icon light-icon">[L]</span>
-        <span class="theme-icon dark-icon">[D]</span>
-    </button>
     <div class="container">
         <div class="ascii-art">
 <pre>
@@ -34,6 +30,10 @@
         <nav class="terminal-nav">
             <a href="{{ get_url(path='/') }}" class="nav-link">[home]</a>
             <a href="{{ get_url(path='/blogs/') }}" class="nav-link">[blogs]</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-icon light-icon">[theme: L]</span>
+                <span class="theme-icon dark-icon">[theme: D]</span>
+            </button>
         </nav>
         
         <main class="terminal-content">

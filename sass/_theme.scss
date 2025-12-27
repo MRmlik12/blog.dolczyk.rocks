@@ -29,27 +29,24 @@
 }
 
 .theme-toggle {
-    position: fixed;
-    top: $spacing-xl;
-    right: $spacing-xl;
-    padding: $spacing-sm 0.75rem;
-    border: $border-width solid var(--border);
-    background-color: var(--bg-secondary);
+    background: none;
+    border: none;
     cursor: pointer;
     font-family: $font-mono;
-    font-size: $font-sm;
+    font-size: $font-base;
     font-weight: bold;
-    color: var(--text-primary);
-    z-index: 1000;
+    padding: 0;
+    margin-left: auto;
 
     &:hover {
-        background-color: var(--bg-primary);
-        border-color: var(--accent);
+        color: var(--prompt-color);
+        text-decoration: underline;
     }
 }
 
 .theme-icon {
     display: none;
+    color: var(--prompt-color);
 }
 
 [data-theme="light"] .light-icon {
